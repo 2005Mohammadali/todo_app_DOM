@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* .poppins-light {
+    font-weight: 300;
+    font-style: normal;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+}
+
+.main{
+    height: 600px;
+    width: 450px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 1.5vw 0.5vw;
+    border:1px solid black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+.input_todo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.input_todo #text{
+    padding: 10px;
+    border-style: none;
+    border-bottom: 2px solid #464646;
+}
+
+.input_todo #sub{
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #222;
+    border-radius: 10px;
+}
+
+.input_todo #sub:hover{
+    background-color: #252525;
+    color: #dadada;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.todos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.todos .todo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 10px;
+    padding: 1vw 0.85vw;
+    background-color: transparent;
+}
+
+.todos .todo .todo_option i{
+    background-color: transparent;
+    padding: 0.8vw;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3vw;
+}
+
+.todos .todo_option{
+    display: none;
+    gap: 13px;
+}
+
+.ri-checkbox-circle-fill:hover{
+    cursor: pointer;
+}
+.ri-checkbox-blank-circle-line:hover{
+    cursor: pointer;
+}
+

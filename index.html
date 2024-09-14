@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="main">
+        <div class="input_todo">
+            <form action="/todos.txt">
+                <input id="text" type="text" name="todo" placeholder="write your todo..." />
+                <input id="sub" type="submit" value="Add Todo" onclick="addTodo()"/>
+            </form>
+        </div>
+        <div class="todos"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
