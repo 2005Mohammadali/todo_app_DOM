@@ -44,13 +44,14 @@ function addTodo() {
     const options = document.createElement("div");
     options.setAttribute("class", "todo_option");
     //Edit button
+    /*
     const editBtn = document.createElement("i");
     // editBtn.innerHTML = `<i class="ri-pencil-line"></i>`;
     editBtn.setAttribute("onmouseenter", "optionEffectEnter(event)")
     editBtn.setAttribute("onmouseleave", "optionEffectLeave(event)")
     editBtn.setAttribute("class", "option_effect")
     editBtn.setAttribute("class", "ri-pencil-line")
-    options.appendChild(editBtn);
+    options.appendChild(editBtn);*/
     //Delete button
     const deleteBtn = document.createElement("i");
     deleteBtn.setAttribute("onclick",`deleteTodo(event)`);
@@ -76,7 +77,7 @@ function deleteTodo(event){
 
 let todo_option = null;
 function todoEffectEnter(event){
-    event.target.style.backgroundColor = `rgb(251, 244, 236)`;
+    event.target.style.backgroundColor = `#e2f1ff`;
     event.target.style.transitionDuration = `0.2s`;
     todo_option = event.explicitOriginalTarget.childNodes[1]
     todo_option.style.display = `flex`;
