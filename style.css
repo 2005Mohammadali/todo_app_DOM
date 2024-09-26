@@ -19,6 +19,15 @@ html, body{
     background-color: #222;
 }
 
+h1{
+    margin-top: 2vw;
+    font-size: 3vw;
+    text-align: center;
+    background: -webkit-linear-gradient(rgb(281, 255, 81), rgb(73, 173, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .main{
     height: 600px;
     width: 450px;
@@ -27,7 +36,7 @@ html, body{
     padding: 1.5vw 0.5vw;
     border:1px solid black;
     position: relative;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%,-50%);
     display: flex;
@@ -102,3 +111,126 @@ html, body{
     cursor: pointer;
 }
 
+
+
+@media (max-width:470px) {
+
+    h1{
+        margin-top: 2vw;
+        font-size: 8vw;
+        text-align: center;
+        background: -webkit-linear-gradient(rgb(281, 255, 81), rgb(73, 173, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .main{
+        height: 600px;
+        width: 380px;
+        border-radius: 20px;
+        padding: 5.5vw 1.5vw;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    .todos .todo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: none;
+        border-radius: 5px;
+        padding: 1.8vw 1.85vw;
+        background-color: transparent;
+    }
+
+    .todos .todo .todo_option i{
+        background-color: transparent;
+        margin-right: 1.8vw;
+        border-radius: 4px;
+        font-size: 3.8vw;
+    }
+    .todos .todo_option{
+        display: inline-block;
+        gap: 13px;
+    }
+    .todos .todo{
+        background-color: #e2f1ff;
+    }
+}
+
+@media (max-width:370px) {
+    .main{
+        width: 340px;
+    }
+
+    .input_todo{
+        width: 100%;
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .input_todo #text{
+        padding: 6px;
+        border-bottom: 1px solid #464646;
+    }
+    
+    .input_todo #sub{
+        padding: 7px;
+        border: 0.5px solid #222;
+        border-radius: 8px;
+    }
+    .todos .todo{
+        background-color: #e2f1ff;
+    }
+}
+
+@media (max-height:600px) {
+    .main{
+        position: relative;
+        top: 80%;
+        left: 50%;
+    }
+    h1{ 
+        font-size: 5vw;
+    }
+    .todos .todo{
+        background-color: #e2f1ff;
+    }
+}
+
+@media (max-height:670px) {
+    .main{
+        position: relative;
+        top: 55%;
+        left: 50%;
+    }
+    h1{ 
+        font-size: 8vw;
+    }
+    .main{
+        height: 580px;
+        width: 350px;
+        border-radius: 20px;
+        padding: 5.5vw 1.5vw;
+    }
+    .input_todo #text{
+        padding: 6px;
+        border-bottom: 1px solid #464646;
+    }
+    
+    .input_todo #sub{
+        padding: 7px;
+        border: 0.5px solid #222;
+        border-radius: 8px;
+    }
+    .todos .todo{
+        background-color: #e2f1ff;
+    }
+    
+}
